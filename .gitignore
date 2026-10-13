@@ -1,0 +1,115 @@
+# Generated work files
+tmp/
+C题/代码/node_modules/
+C题/node_modules/
+C题/结果/_previews/
+C题/代码/__pycache__/
+C题/结果/Q1增强分析/__pycache__/
+
+# Rendered page previews already present in the source folder
+C题/page*.png
+
+# Microsoft Office lock files
+~$*
+
+# Exported handoff archives are reproducible artifacts; keep the canonical
+# source, results, and audit files under version control instead.
+C题/结果/问题四交接包_*/
+C题/结果/问题四交接包_*.zip
+C题/结果/_q4_audit_run.log
+C题/结果/问题三交接包_*/
+C题/结果/问题三交接包_*.zip
+
+# Non-C-problem folders and local backups stay out of the repository
+/别的赛题/
+/提交版本/
+/重跑前备份_20261012/
+
+# Editor config and Node dependencies
+.vscode/
+node_modules/
+
+# Q4 debug/rerun artifacts (superseded by the final verified results)
+C题/结果/q4_2_price_oracle_*
+C题/结果/q4_3_price_oracle_*
+C题/结果/q4_3_solution_parallel.json
+C题/结果/q4_2_parallel.*
+C题/结果/q4_final_rerun.*
+C题/结果/q4_rerun*.log
+
+# Appendix render scratch directories
+C题/结果/_appendix_compact_v6_render/
+C题/结果/_appendix_uniform_v2_render/
+C题/结果/_appendix_compile_test*
+
+# Superseded appendix table (old 9/13 version, replaced by 问题一至四附录表格.tex)
+C题/结果/问题三附录表格.tex
+
+# Teammate handoff archive (reproducible from tracked sources)
+C题/结果/论文竞争力提升材料_队友交接.zip
+C题/结果/论文竞争力提升材料_队友交接/
+
+# Root-level scratch files
+/_*
+/texput.log
+
+# Teammate handoff archives and old snapshots (superseded by final code)
+C题/结果/Q2交接包_*.zip
+C题/结果/Q1增强分析/
+C题/结果/论文竞争力提升点整理_队友交接.md
+C题/结果/问题四论文交接_*.md
+
+# Internal working documents
+/论文数字替换对照清单.md
+/format2026.doc
+
+# LaTeX compile intermediates
+论文源文件/26论文/example.aux
+论文源文件/26论文/example.log
+
+# Intermediate analysis scripts and per-problem docs (local only)
+C题/代码/_gen_appendix.py
+C题/代码/README_q2.md
+C题/代码/README_q3.md
+C题/代码/README_q4.md
+C题/代码/README_q4_benchmark.md
+C题/代码/analyze_q3.py
+C题/代码/analyze_q4.py
+C题/代码/analyze_q4_price.py
+C题/代码/backtest_q2_forecast.py
+C题/代码/q3_sensitivity.py
+C题/代码/q3_update_ablation.py
+C题/代码/q4_benchmark.py
+C题/代码/q4_risk_calibration.py
+C题/代码/q4_strategy_ablation.py
+C题/代码/render_q3_workbook.mjs
+C题/代码/test_forecast_q2.py
+C题/代码/问题二_完整说明.md
+C题/代码/问题三_完整说明.md
+
+# Intermediate analysis outputs (local only; final tables kept)
+C题/结果/q2_forecast_backtest.json
+C题/结果/q2_forecast_backtest.md
+C题/结果/q3_audit.json
+C题/结果/q3_audit.md
+C题/结果/q3_sensitivity.json
+C题/结果/q3_sensitivity_accounting.json
+C题/结果/q3_sensitivity_full.json
+C题/结果/q3_update_ablation.json
+C题/结果/q3_update_ablation_report.md
+C题/结果/q4_annual_main_results.csv
+C题/结果/q4_audit.json
+C题/结果/q4_audit.md
+C题/结果/q4_price_benchmark.json
+C题/结果/q4_price_benchmark.md
+C题/结果/q4_price_forecast_audit.json
+C题/结果/q4_price_forecast_audit.md
+C题/结果/q4_risk_calibration.json
+C题/结果/q4_risk_calibration.md
+C题/结果/q4_strategy_ablation.json
+C题/结果/q4_strategy_ablation.md
+
+# Data quality notes (local only)
+C题/数据/README.md
+C题/数据/attachment2_quality_report.txt
+C题/数据/data_quality_report.txt

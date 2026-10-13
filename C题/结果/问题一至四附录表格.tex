@@ -1,0 +1,952 @@
+% 四个问题结果表附录：在主文档 appendix 之后用 input{问题一至四附录表格.tex} 插入。
+% 数据来源：C题/结果下当前正式结果文件；数值统一保留四位小数。
+% 主文档导言区需加载：booktabs、longtable、array。
+
+\begingroup
+\small
+\setlength{\tabcolsep}{3.5pt}
+\renewcommand{\arraystretch}{1.08}
+\setlength{\LTpre}{2pt}
+\setlength{\LTpost}{4pt}
+\setlength{\abovecaptionskip}{3pt}
+\setlength{\belowcaptionskip}{2pt}
+
+\section{问题一至问题四结果表}
+\noindent 本附录列出题目要求的指定时段和指定日期；全年 10 分钟完整策略保存在题目规定的 result 文件中。电量单位为 kWh，费用单位为元；时间段采用左闭右开记法。
+\subsection{问题一：附件 1 示例日}
+\noindent 问题一的输入为附件 1 的单日价格、负荷和光伏预测，因此不对应自然日期。
+\begingroup
+\footnotesize
+\begin{longtable}{@{}l r@{\hspace{8pt}}l r@{\hspace{8pt}}l r@{}}
+\caption{问题一指定时段计划购电量及全天合计、购电费}\label{tab:app-q1-plan}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题一指定时段计划购电量及全天合计、购电费（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{6}{l}{\textbf{日期：附件1示例日}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 486.4029 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 394.9315 & \texttt{18:00--18:10} & 636.9826 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{59\,482.6990} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{35\,126.9486}\\
+\end{longtable}
+\endgroup
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{5.2cm} r r@{}}
+\caption{问题一指定时段四小时充放电量及首末储电量}\label{tab:app-q1-storage}\\
+\toprule
+\multicolumn{3}{c}{\textbf{四小时充放电量}}\\
+\multicolumn{3}{c}{\textbf{日期：附件1示例日}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题一指定时段四小时充放电量及首末储电量（续）}\\
+\toprule
+\multicolumn{3}{c}{\textbf{日期：附件1示例日}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{3}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{0:00--4:00} & 4\,500.0000 & 0.0000\\
+\texttt{4:00--8:00} & 833.3333 & 6\,365.8412\\
+\texttt{8:00--12:00} & 4\,787.9643 & 1\,702.9970\\
+\texttt{12:00--16:00} & 5\,286.0352 & 91.1014\\
+\texttt{16:00--20:00} & 0.0000 & 5\,780.1319\\
+\texttt{20:00--24:00} & 5\,333.3333 & 2\,859.8681\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{6\,000.0000}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{6\,000.0000}\\
+\end{longtable}
+\endgroup
+\noindent\footnotesize 注：问题一首末储电量均为 6000.0000 kWh，符合题目要求。
+\normalsize
+
+\subsection{问题二：固定电价下四个指定日期}
+\noindent 以下表格分别对应题目表 1、表 2 和表 3；日期分组行将不同指标明确分开。
+\begingroup
+\footnotesize
+\begin{longtable}{@{}l r@{\hspace{8pt}}l r@{\hspace{8pt}}l r@{}}
+\caption{问题二指定时段计划购电量及全天合计、购电费}\label{tab:app-q2-plan}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题二指定时段计划购电量及全天合计、购电费（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{6}{l}{\textbf{日期：2025-03-20}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 674.8010 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 491.6659 & \texttt{18:00--18:10} & 682.3533 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{64\,236.1943} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{40\,149.9148}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-06-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 0.0000 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 112.5318 & \texttt{18:00--18:10} & 387.0929 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{41\,031.0774} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{22\,192.8847}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-09-23}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 508.1138 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 494.5129 & \texttt{18:00--18:10} & 715.7513 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{67\,463.8476} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{41\,830.1200}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-12-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 1\,006.1064 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 800.0563 & \texttt{18:00--18:10} & 694.7699 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{96\,153.7242} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{62\,375.2035}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{3.2cm} r r@{\hspace{7pt}}p{3.2cm} r r@{}}
+\caption{问题二指定时段四小时充放电量及首末储电量}\label{tab:app-q2-storage}\\
+\toprule
+\multicolumn{6}{c}{\textbf{四小时充放电量}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题二指定时段四小时充放电量及首末储电量（续）}\\
+\toprule
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{0:00--4:00} & 1\,011.0183 & 0.0000 & \texttt{0:00--4:00} & 518.1436 & 0.0004\\
+\texttt{4:00--8:00} & 838.3553 & 5\,149.4345 & \texttt{4:00--8:00} & 779.7878 & 2\,030.4927\\
+\texttt{8:00--12:00} & 4\,748.8581 & 2\,881.6038 & \texttt{8:00--12:00} & 4\,117.2783 & 0.0000\\
+\texttt{12:00--16:00} & 5\,403.4344 & 398.3285 & \texttt{12:00--16:00} & 6\,251.4416 & 12.0306\\
+\texttt{16:00--20:00} & 54.2849 & 5\,335.9061 & \texttt{16:00--20:00} & 80.4212 & 5\,749.0645\\
+\texttt{20:00--24:00} & 3\,021.8296 & 2\,930.2165 & \texttt{20:00--24:00} & 8\,333.3333 & 2\,485.8967\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{9\,140.0836} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{2\,483.7968}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{4\,159.5422} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{9\,136.7344}\\
+\addlinespace[2pt]
+\midrule
+\multicolumn{3}{c}{\textbf{日期：2025-09-23}} & \multicolumn{3}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\texttt{0:00--4:00} & 1\,500.0000 & 0.0000 & \texttt{0:00--4:00} & 1\,500.0000 & 0.0000\\
+\texttt{4:00--8:00} & 93.2583 & 6\,344.4852 & \texttt{4:00--8:00} & 871.3562 & 1\,565.3521\\
+\texttt{8:00--12:00} & 5\,758.2798 & 1\,699.4430 & \texttt{8:00--12:00} & 5\,795.9985 & 6\,880.0705\\
+\texttt{12:00--16:00} & 5\,972.9676 & 1\,259.4976 & \texttt{12:00--16:00} & 7\,972.4554 & 2\,809.6870\\
+\texttt{16:00--20:00} & 0.0000 & 5\,602.6922 & \texttt{16:00--20:00} & 49.1958 & 5\,246.5286\\
+\texttt{20:00--24:00} & 8\,303.6426 & 2\,636.7317 & \texttt{20:00--24:00} & 7\,716.9282 & 2\,378.1506\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{8\,700.0000} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{8\,700.0000}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{8\,673.2784} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{9\,237.7976}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{4.0cm} r@{\hspace{8pt}}p{4.0cm} r@{}}
+\caption{问题二指定日期紧急购电区间与购电量}\label{tab:app-q2-emergency}\\
+\toprule
+\multicolumn{4}{c}{\textbf{实际发生的紧急购电区间}}\\
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题二指定日期紧急购电区间与购电量（续）}\\
+\toprule
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{2}{c}{无紧急购电} & \multicolumn{2}{c}{无紧急购电}\\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\addlinespace[2pt]
+\midrule
+\multicolumn{2}{c}{\textbf{日期：2025-09-23}} & \multicolumn{2}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\texttt{7:30--8:00} & 154.1654 & \multicolumn{2}{c}{无紧急购电}\\
+\texttt{8:50--9:00} & 2.1991 &  & \\
+\texttt{9:10--10:00} & 194.9736 &  & \\
+\texttt{14:50--15:10} & 289.7742 &  & \\
+\texttt{15:30--15:40} & 7.0561 &  & \\
+\texttt{16:10--19:30} & 557.5803 &  & \\
+\texttt{19:40--20:00} & 0.0088 &  & \\
+\texttt{20:20--20:30} & 198.9892 &  & \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\end{longtable}
+\endgroup
+\noindent\footnotesize 注：紧急购电表中的每一行是结果文件已合并的连续区间；小于 0.001 kWh 的求解器数值噪声未单独展开。
+\normalsize
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{longtable}{@{}p{3.2cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
+\caption{问题二指定日期费用核对}\label{tab:app-q2-settlement}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{紧急购电费} & \textbf{总费用} & \textbf{紧急购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题二指定日期费用核对（续）}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{紧急购电费} & \textbf{总费用} & \textbf{紧急购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+2025-03-20 & 40\,149.9148 & 0.0000 & 40\,149.9148 & 0.0000\\
+2025-06-21 & 22\,192.8847 & 0.0000 & 22\,192.8847 & 0.0000\\
+2025-09-23 & 41\,830.1200 & 6\,945.6106 & 48\,775.7306 & 1\,404.7468\\
+2025-12-21 & 62\,375.2035 & 0.0000 & 62\,375.2035 & 0.0000\\
+\end{longtable}
+\endgroup
+\subsection{问题三：四阶段预报更新下四个指定日期}
+\noindent 计划购电量由 0:00 预报确定，调整购电量由 06:00、12:00、18:00 预报更新确定，故单独列出计划表和调整表。
+\begingroup
+\footnotesize
+\begin{longtable}{@{}l r@{\hspace{8pt}}l r@{\hspace{8pt}}l r@{}}
+\caption{问题三指定时段计划购电量及全天合计、购电费}\label{tab:app-q3-plan}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题三指定时段计划购电量及全天合计、购电费（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{6}{l}{\textbf{日期：2025-03-20}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 639.9015 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 666.9700 & \texttt{18:00--18:10} & 682.3533 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{71\,223.4206} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{43\,269.8800}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-06-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 0.0000 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 156.8165 & \texttt{18:00--18:10} & 396.2684 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{34\,050.4715} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{19\,163.8812}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-09-23}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 487.9507 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 592.1858 & \texttt{18:00--18:10} & 752.6450 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{72\,759.1845} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{45\,844.6679}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-12-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 1\,092.9883 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 829.4041 & \texttt{18:00--18:10} & 712.6333 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{97\,226.1111} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{62\,553.5846}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{3.2cm} r r@{\hspace{7pt}}p{3.2cm} r r@{}}
+\caption{问题三指定时段计划购电量与调整购电量对照}\label{tab:app-q3-adjustment}\\
+\toprule
+\multicolumn{6}{c}{\textbf{计划购电量与调整购电量对照}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量} & \textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题三指定时段计划购电量与调整购电量对照（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{计划购电量与调整购电量对照}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量} & \textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{10:00--10:10} & 0.0000 & 0.0000 & \texttt{10:00--10:10} & 0.0000 & 0.0000\\
+\texttt{12:00--12:10} & 639.9015 & 574.4349 & \texttt{12:00--12:10} & 0.0000 & 134.6093\\
+\texttt{14:00--14:10} & 0.0000 & 0.0000 & \texttt{14:00--14:10} & 0.0000 & 0.0000\\
+\texttt{16:00--16:10} & 666.9700 & 505.0489 & \texttt{16:00--16:10} & 156.8165 & 156.8165\\
+\texttt{18:00--18:10} & 682.3533 & 682.3529 & \texttt{18:00--18:10} & 396.2684 & 556.9749\\
+\texttt{20:00--20:10} & 0.0000 & 0.0000 & \texttt{20:00--20:10} & 0.0000 & 0.0000\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\textbf{全天购电量} & \textbf{71\,223.4206} & \textbf{67\,650.2691} & \textbf{全天购电量} & \textbf{34\,050.4715} & \textbf{35\,405.9812}\\
+\textbf{表内量费用} & \textbf{43\,269.8800} & \textbf{44\,050.2411} & \textbf{表内量费用} & \textbf{19\,163.8812} & \textbf{20\,728.9834}\\
+\addlinespace[2pt]
+\midrule
+\multicolumn{3}{c}{\textbf{日期：2025-09-23}} & \multicolumn{3}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量} & \textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量}\\
+\midrule
+\texttt{10:00--10:10} & 0.0000 & 0.0000 & \texttt{10:00--10:10} & 0.0000 & 0.0000\\
+\texttt{12:00--12:10} & 487.9507 & 341.1667 & \texttt{12:00--12:10} & 1\,092.9883 & 976.7265\\
+\texttt{14:00--14:10} & 0.0000 & 0.0000 & \texttt{14:00--14:10} & 0.0000 & 0.0000\\
+\texttt{16:00--16:10} & 592.1858 & 559.7453 & \texttt{16:00--16:10} & 829.4041 & 829.4041\\
+\texttt{18:00--18:10} & 752.6450 & 752.6450 & \texttt{18:00--18:10} & 712.6333 & 712.6333\\
+\texttt{20:00--20:10} & 0.0000 & 0.0000 & \texttt{20:00--20:10} & 0.0000 & 0.0000\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\textbf{全天购电量} & \textbf{72\,759.1845} & \textbf{70\,100.8818} & \textbf{全天购电量} & \textbf{97\,226.1111} & \textbf{96\,924.3909}\\
+\textbf{表内量费用} & \textbf{45\,844.6679} & \textbf{45\,462.2674} & \textbf{表内量费用} & \textbf{62\,553.5846} & \textbf{64\,489.8106}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{3.2cm} r r@{\hspace{7pt}}p{3.2cm} r r@{}}
+\caption{问题三最终四小时充放电量及首末储电量}\label{tab:app-q3-storage}\\
+\toprule
+\multicolumn{6}{c}{\textbf{四小时充放电量}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题三最终四小时充放电量及首末储电量（续）}\\
+\toprule
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{0:00--4:00} & 8\,999.9600 & 0.0000 & \texttt{0:00--4:00} & 1\,999.6809 & 0.0000\\
+\texttt{4:00--8:00} & 1\,669.5871 & 5\,190.0889 & \texttt{4:00--8:00} & 564.2936 & 1\,709.7832\\
+\texttt{8:00--12:00} & 2\,933.1282 & 2\,777.3772 & \texttt{8:00--12:00} & 608.6814 & 0.0000\\
+\texttt{12:00--16:00} & 6\,952.3599 & 229.4895 & \texttt{12:00--16:00} & 8\,610.8105 & 0.0000\\
+\texttt{16:00--20:00} & 231.2898 & 5\,709.7275 & \texttt{16:00--20:00} & 691.5788 & 5\,908.2252\\
+\texttt{20:00--24:00} & 0.0000 & 2\,930.2165 & \texttt{20:00--24:00} & 0.0000 & 2\,485.8989\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.0360} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.9684}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0622} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,201.9455}\\
+\addlinespace[2pt]
+\midrule
+\multicolumn{3}{c}{\textbf{日期：2025-09-23}} & \multicolumn{3}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\texttt{0:00--4:00} & 9\,000.0000 & 0.0001 & \texttt{0:00--4:00} & 9\,000.0000 & 0.0002\\
+\texttt{4:00--8:00} & 1\,675.3595 & 5\,573.3607 & \texttt{4:00--8:00} & 2\,069.6235 & 1\,567.8731\\
+\texttt{8:00--12:00} & 3\,574.7519 & 1\,896.6157 & \texttt{8:00--12:00} & 4\,329.8233 & 6\,676.2718\\
+\texttt{12:00--16:00} & 5\,594.5100 & 403.6249 & \texttt{12:00--16:00} & 7\,400.4462 & 2\,182.6191\\
+\texttt{16:00--20:00} & 351.6604 & 5\,707.9276 & \texttt{16:00--20:00} & 9.3370 & 5\,206.1868\\
+\texttt{20:00--24:00} & 0.0000 & 2\,777.4592 & \texttt{20:00--24:00} & 0.0000 & 2\,842.5253\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.0000} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.0000}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0000} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0000}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{4.0cm} r@{\hspace{8pt}}p{4.0cm} r@{}}
+\caption{问题三指定日期最终紧急购电区间与购电量}\label{tab:app-q3-emergency}\\
+\toprule
+\multicolumn{4}{c}{\textbf{实际发生的紧急购电区间}}\\
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题三指定日期最终紧急购电区间与购电量（续）}\\
+\toprule
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{14:50--15:00} & 25.2332 & \texttt{16:20--16:30} & 22.2268\\
+\texttt{16:00--16:30} & 23.4106 &  & \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\addlinespace[2pt]
+\midrule
+\multicolumn{2}{c}{\textbf{日期：2025-09-23}} & \multicolumn{2}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\texttt{17:50--18:00} & 40.3238 & \texttt{17:10--18:00} & 129.0189\\
+\texttt{18:30--19:00} & 0.4117 & \texttt{18:50--19:00} & 0.0018\\
+\texttt{19:20--19:30} & 0.0524 &  & \\
+\texttt{19:50--20:00} & 0.0014 &  & \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\end{longtable}
+\endgroup
+\noindent\footnotesize 注：调整表的全天费用列为 result3.xlsx 工作表中的表内汇总；最终总费用还包括偏差结算和紧急购电费用。
+\normalsize
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{longtable}{@{}p{3.2cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
+\caption{问题三指定日期费用核对}\label{tab:app-q3-settlement}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{调整偏差费} & \textbf{紧急购电费} & \textbf{总费用}\\
+\midrule
+\endfirsthead
+\caption[]{问题三指定日期费用核对（续）}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{调整偏差费} & \textbf{紧急购电费} & \textbf{总费用}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+2025-03-20 & 43\,269.8800 & 3\,700.8611 & 215.9406 & 44\,266.1817\\
+2025-06-21 & 19\,163.8812 & 1\,565.1022 & 94.6752 & 20\,823.6586\\
+2025-09-23 & 45\,844.6679 & 1\,716.3611 & 219.5431 & 45\,681.8105\\
+2025-12-21 & 62\,553.5846 & 3\,513.8450 & 632.0483 & 65\,121.8589\\
+\end{longtable}
+\endgroup
+\subsection{问题四：波动电价下重新计算问题二}
+\noindent 本节使用附件 4 的波动电价，日期仍取题目指定的四天，便于与问题二对照。
+\begingroup
+\footnotesize
+\begin{longtable}{@{}l r@{\hspace{8pt}}l r@{\hspace{8pt}}l r@{}}
+\caption{问题四（对应问题二）指定时段计划购电量及全天合计、购电费}\label{tab:app-q4-2-plan}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题二）指定时段计划购电量及全天合计、购电费（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{6}{l}{\textbf{日期：2025-03-20}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 701.5206 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 503.2713 & \texttt{18:00--18:10} & 682.3533 & \texttt{20:00--20:10} & 726.3683\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{65\,553.4884} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{41\,974.2526}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-06-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 0.0000 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 174.9916 & \texttt{18:00--18:10} & 387.8121 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{42\,465.8104} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{19\,920.1709}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-09-23}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 483.9869 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 454.4363 & \texttt{18:00--18:10} & 714.7024 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{72\,096.8765} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{45\,809.8429}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-12-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 994.5601 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 802.2214 & \texttt{18:00--18:10} & 703.2827 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{93\,950.1826} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{72\,427.4412}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{3.2cm} r r@{\hspace{7pt}}p{3.2cm} r r@{}}
+\caption{问题四（对应问题二）指定时段四小时充放电量及首末储电量}\label{tab:app-q4-2-storage}\\
+\toprule
+\multicolumn{6}{c}{\textbf{四小时充放电量}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题二）指定时段四小时充放电量及首末储电量（续）}\\
+\toprule
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{0:00--4:00} & 4\,175.0070 & 0.0000 & \texttt{0:00--4:00} & 0.0000 & 0.0016\\
+\texttt{4:00--8:00} & 276.7862 & 5\,038.5124 & \texttt{4:00--8:00} & 1\,733.6092 & 1\,717.3317\\
+\texttt{8:00--12:00} & 4\,245.7725 & 2\,369.5352 & \texttt{8:00--12:00} & 4\,731.9536 & 0.0000\\
+\texttt{12:00--16:00} & 6\,126.1009 & 166.7896 & \texttt{12:00--16:00} & 5\,155.0727 & 0.0000\\
+\texttt{16:00--20:00} & 48.7632 & 5\,343.6826 & \texttt{16:00--20:00} & 332.2241 & 5\,969.4508\\
+\texttt{20:00--24:00} & 0.0000 & 2\,930.2165 & \texttt{20:00--24:00} & 9\,104.5509 & 2\,485.8967\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{5\,424.5501} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,950.5743}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0300} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{9\,599.2652}\\
+\addlinespace[2pt]
+\midrule
+\multicolumn{3}{c}{\textbf{日期：2025-09-23}} & \multicolumn{3}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\texttt{0:00--4:00} & 7\,493.4446 & 0.0011 & \texttt{0:00--4:00} & 0.0000 & 0.0006\\
+\texttt{4:00--8:00} & 830.6102 & 5\,624.1175 & \texttt{4:00--8:00} & 57.0413 & 860.2440\\
+\texttt{8:00--12:00} & 4\,738.1333 & 1\,793.3657 & \texttt{8:00--12:00} & 5\,554.1158 & 6\,998.0141\\
+\texttt{12:00--16:00} & 5\,647.6397 & 308.1509 & \texttt{12:00--16:00} & 6\,733.9457 & 2\,327.9070\\
+\texttt{16:00--20:00} & 0.0000 & 5\,658.9189 & \texttt{16:00--20:00} & 57.2603 & 4\,659.3576\\
+\texttt{20:00--24:00} & 6\,175.3128 & 2\,445.4064 & \texttt{20:00--24:00} & 8\,348.0236 & 2\,149.7092\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,950.0000} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{10\,607.3272}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{6\,757.7815} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{10\,399.0837}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{4.0cm} r@{\hspace{8pt}}p{4.0cm} r@{}}
+\caption{问题四（对应问题二）指定日期紧急购电区间与购电量}\label{tab:app-q4-2-emergency}\\
+\toprule
+\multicolumn{4}{c}{\textbf{实际发生的紧急购电区间}}\\
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题二）指定日期紧急购电区间与购电量（续）}\\
+\toprule
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{5:50--6:00} & 0.0477 & \texttt{5:20--5:30} & 2.0447\\
+\texttt{9:10--10:10} & 407.8420 & \texttt{5:50--6:00} & 3.0416\\
+\texttt{14:50--15:00} & 87.9331 &  & \\
+\texttt{16:00--16:40} & 55.0116 &  & \\
+\texttt{16:50--17:30} & 31.8290 &  & \\
+\texttt{18:30--18:50} & 307.2524 &  & \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\addlinespace[2pt]
+\midrule
+\multicolumn{2}{c}{\textbf{日期：2025-09-23}} & \multicolumn{2}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\texttt{4:40--4:50} & 0.2002 & \multicolumn{2}{c}{无紧急购电}\\
+\texttt{5:10--5:40} & 21.7003 &  & \\
+\texttt{5:50--6:00} & 6.2328 &  & \\
+\texttt{7:10--8:00} & 935.4862 &  & \\
+\texttt{9:00--9:10} & 49.9853 &  & \\
+\texttt{9:30--10:00} & 49.8757 &  & \\
+\texttt{10:10--10:20} & 3.3890 &  & \\
+\texttt{14:50--15:00} & 95.4740 &  & \\
+\texttt{15:10--15:40} & 41.0308 &  & \\
+\texttt{16:00--18:10} & 710.1181 &  & \\
+\texttt{18:50--19:10} & 246.5563 &  & \\
+\texttt{20:00--20:10} & 0.0990 &  & \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\end{longtable}
+\endgroup
+\noindent\footnotesize 注：问题四-2 的紧急购电费用按实时交易价格的 5 倍计入。
+\normalsize
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{longtable}{@{}p{3.2cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
+\caption{问题四（对应问题二）指定日期费用核对}\label{tab:app-q4-2-settlement}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{紧急购电费} & \textbf{总费用} & \textbf{紧急购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题二）指定日期费用核对（续）}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{紧急购电费} & \textbf{总费用} & \textbf{紧急购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+2025-03-20 & 41\,974.2526 & 4\,860.3682 & 46\,834.6208 & 889.9159\\
+2025-06-21 & 19\,920.1709 & 9.9061 & 19\,930.0770 & 5.0862\\
+2025-09-23 & 45\,809.8429 & 10\,313.1134 & 56\,122.9563 & 2\,160.1483\\
+2025-12-21 & 72\,427.4412 & 0.0000 & 72\,427.4412 & 0.0000\\
+\end{longtable}
+\endgroup
+\subsection{问题四：波动电价下重新计算问题三}
+\noindent 本节在问题三的预报更新框架下使用附件 4 波动电价，同时列出计划、调整、储能和紧急购电结果。
+\begingroup
+\footnotesize
+\begin{longtable}{@{}l r@{\hspace{8pt}}l r@{\hspace{8pt}}l r@{}}
+\caption{问题四（对应问题三）指定时段计划购电量及全天合计、购电费}\label{tab:app-q4-3-plan}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题三）指定时段计划购电量及全天合计、购电费（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{指定时段计划购电量}}\\
+\textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量} & \textbf{时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\multicolumn{6}{l}{\textbf{日期：2025-03-20}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 652.8768 & \texttt{14:00--14:10} & 137.7996\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 680.1776 & \texttt{18:00--18:10} & 682.3533 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{70\,551.8390} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{45\,752.3854}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-06-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 0.0000 & \texttt{14:00--14:10} & 0.0000\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 146.9475 & \texttt{18:00--18:10} & 392.0622 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{33\,114.4670} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{16\,413.4331}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-09-23}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 439.7502 & \texttt{14:00--14:10} & 1.6871\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 596.0532 & \texttt{18:00--18:10} & 752.6450 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{70\,917.4708} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{47\,203.1310}\\
+\addlinespace[2pt]\midrule
+\multicolumn{6}{l}{\textbf{日期：2025-12-21}\hfill\textit{指定时段购电}}\\
+\noalign{\penalty 10000}
+\cmidrule(lr){1-6}
+\texttt{10:00--10:10} & 0.0000 & \texttt{12:00--12:10} & 1\,048.4710 & \texttt{14:00--14:10} & 354.4040\\
+\noalign{\penalty 10000}
+\texttt{16:00--16:10} & 1\,637.7179 & \texttt{18:00--18:10} & 712.6333 & \texttt{20:00--20:10} & 0.0000\\
+\noalign{\penalty 10000}
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{全天购电量}} & \textbf{95\,819.2832} & \multicolumn{2}{l}{\textbf{全天购电费}} & \textbf{73\,719.6865}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{3.2cm} r r@{\hspace{7pt}}p{3.2cm} r r@{}}
+\caption{问题四（对应问题三）指定时段计划购电量与调整购电量对照}\label{tab:app-q4-3-adjustment}\\
+\toprule
+\multicolumn{6}{c}{\textbf{计划购电量与调整购电量对照}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量} & \textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题三）指定时段计划购电量与调整购电量对照（续）}\\
+\toprule
+\multicolumn{6}{c}{\textbf{计划购电量与调整购电量对照}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量} & \textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{10:00--10:10} & 0.0000 & 0.0000 & \texttt{10:00--10:10} & 0.0000 & 0.0000\\
+\texttt{12:00--12:10} & 652.8768 & 585.7802 & \texttt{12:00--12:10} & 0.0000 & 145.4950\\
+\texttt{14:00--14:10} & 137.7996 & 15.7197 & \texttt{14:00--14:10} & 0.0000 & 0.0000\\
+\texttt{16:00--16:10} & 680.1776 & 680.1776 & \texttt{16:00--16:10} & 146.9475 & 146.9475\\
+\texttt{18:00--18:10} & 682.3533 & 682.3533 & \texttt{18:00--18:10} & 392.0622 & 392.0622\\
+\texttt{20:00--20:10} & 0.0000 & 0.0000 & \texttt{20:00--20:10} & 0.0000 & 0.0000\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\textbf{全天购电量} & \textbf{70\,551.8390} & \textbf{67\,411.2402} & \textbf{全天购电量} & \textbf{33\,114.4670} & \textbf{34\,697.8908}\\
+\textbf{表内量费用} & \textbf{45\,752.3854} & \textbf{45\,665.0897} & \textbf{表内量费用} & \textbf{16\,413.4331} & \textbf{17\,755.1212}\\
+\addlinespace[2pt]
+\midrule
+\multicolumn{3}{c}{\textbf{日期：2025-09-23}} & \multicolumn{3}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量} & \textbf{时间段} & \textbf{计划购电量} & \textbf{调整购电量}\\
+\midrule
+\texttt{10:00--10:10} & 0.0000 & 0.0000 & \texttt{10:00--10:10} & 0.0000 & 0.0000\\
+\texttt{12:00--12:10} & 439.7502 & 439.7502 & \texttt{12:00--12:10} & 1\,048.4710 & 979.3312\\
+\texttt{14:00--14:10} & 1.6871 & 1.6871 & \texttt{14:00--14:10} & 354.4040 & 354.4040\\
+\texttt{16:00--16:10} & 596.0532 & 550.0760 & \texttt{16:00--16:10} & 1\,637.7179 & 1\,571.3359\\
+\texttt{18:00--18:10} & 752.6450 & 752.6450 & \texttt{18:00--18:10} & 712.6333 & 712.6333\\
+\texttt{20:00--20:10} & 0.0000 & 227.3555 & \texttt{20:00--20:10} & 0.0000 & 36.9558\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\textbf{全天购电量} & \textbf{70\,917.4708} & \textbf{68\,083.0096} & \textbf{全天购电量} & \textbf{95\,819.2832} & \textbf{95\,423.4108}\\
+\textbf{表内量费用} & \textbf{47\,203.1310} & \textbf{46\,457.3937} & \textbf{表内量费用} & \textbf{73\,719.6865} & \textbf{74\,996.1111}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{3.2cm} r r@{\hspace{7pt}}p{3.2cm} r r@{}}
+\caption{问题四（对应问题三）最终四小时充放电量及首末储电量}\label{tab:app-q4-3-storage}\\
+\toprule
+\multicolumn{6}{c}{\textbf{四小时充放电量}}\\
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题三）最终四小时充放电量及首末储电量（续）}\\
+\toprule
+\multicolumn{3}{c}{\textbf{日期：2025-03-20}} & \multicolumn{3}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{0:00--4:00} & 9\,253.8434 & 0.0000 & \texttt{0:00--4:00} & 0.0001 & 0.0001\\
+\texttt{4:00--8:00} & 0.0421 & 5\,193.2709 & \texttt{4:00--8:00} & 1\,625.7496 & 1\,110.6391\\
+\texttt{8:00--12:00} & 4\,143.2495 & 2\,302.3791 & \texttt{8:00--12:00} & 549.9483 & 0.0000\\
+\texttt{12:00--16:00} & 5\,826.9530 & 0.0000 & \texttt{12:00--16:00} & 9\,057.5514 & 0.0000\\
+\texttt{16:00--20:00} & 658.2006 & 8\,609.0044 & \texttt{16:00--20:00} & 550.1955 & 6\,740.9111\\
+\texttt{20:00--24:00} & 0.0000 & 0.0000 & \texttt{20:00--24:00} & 0.0000 & 1\,701.7946\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.0029} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,228.6018}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0023} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,218.8745}\\
+\addlinespace[2pt]
+\midrule
+\multicolumn{3}{c}{\textbf{日期：2025-09-23}} & \multicolumn{3}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{时间段} & \textbf{充电量} & \textbf{放电量} & \textbf{时间段} & \textbf{充电量} & \textbf{放电量}\\
+\midrule
+\texttt{0:00--4:00} & 10\,412.9197 & 0.0004 & \texttt{0:00--4:00} & 9\,949.5794 & 0.0019\\
+\texttt{4:00--8:00} & 0.0000 & 6\,378.7166 & \texttt{4:00--8:00} & 46.3153 & 638.7558\\
+\texttt{8:00--12:00} & 4\,767.7773 & 1\,896.6157 & \texttt{8:00--12:00} & 4\,405.7858 & 7\,311.0312\\
+\texttt{12:00--16:00} & 5\,567.0542 & 0.0000 & \texttt{12:00--16:00} & 8\,331.5369 & 2\,445.4247\\
+\texttt{16:00--20:00} & 21.6489 & 8\,547.8789 & \texttt{16:00--20:00} & 0.0004 & 4\,634.6064\\
+\texttt{20:00--24:00} & 0.0000 & 0.0026 & \texttt{20:00--24:00} & 0.0000 & 3\,384.0864\\
+\addlinespace[1pt]
+\cmidrule(lr){1-3}\cmidrule(lr){4-6}
+\multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.0000} & \multicolumn{2}{l}{\textbf{日初 SOC}} & \textbf{1\,200.0000}\\
+\multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0000} & \multicolumn{2}{l}{\textbf{日末 SOC}} & \textbf{1\,200.0000}\\
+\end{longtable}
+\endgroup
+
+\begingroup
+\footnotesize
+\begin{longtable}{@{}p{4.0cm} r@{\hspace{8pt}}p{4.0cm} r@{}}
+\caption{问题四（对应问题三）指定日期最终紧急购电区间与购电量}\label{tab:app-q4-3-emergency}\\
+\toprule
+\multicolumn{4}{c}{\textbf{实际发生的紧急购电区间}}\\
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题三）指定日期最终紧急购电区间与购电量（续）}\\
+\toprule
+\multicolumn{2}{c}{\textbf{日期：2025-03-20}} & \multicolumn{2}{c}{\textbf{日期：2025-06-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+\texttt{5:50--6:00} & 0.0956 & \texttt{16:10--16:30} & 59.6801\\
+\texttt{7:50--8:00} & 9.2722 &  & \\
+\texttt{8:50--9:00} & 37.3357 &  & \\
+\texttt{9:10--10:10} & 437.6625 &  & \\
+\texttt{18:40--18:50} & 0.0075 &  & \\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\addlinespace[2pt]
+\midrule
+\multicolumn{2}{c}{\textbf{日期：2025-09-23}} & \multicolumn{2}{c}{\textbf{日期：2025-12-21}}\\
+\textbf{紧急购电时间段} & \textbf{购电量} & \textbf{紧急购电时间段} & \textbf{购电量}\\
+\midrule
+\texttt{17:40--18:00} & 133.2441 & \texttt{9:30--9:50} & 90.4330\\
+\texttt{18:30--19:00} & 0.6626 & \texttt{17:40--18:00} & 33.4330\\
+\texttt{19:10--19:30} & 0.0140 & \texttt{18:10--18:30} & 0.1033\\
+\texttt{19:50--20:00} & 0.0018 & \texttt{19:40--19:50} & 0.0030\\
+\cmidrule(lr){1-2}\cmidrule(lr){3-4}
+\end{longtable}
+\endgroup
+\noindent\footnotesize 注：问题四-3 的调整偏差费用按附件 4 对应交易时刻电价计算，紧急购电费用按其 5 倍计入。
+\normalsize
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{longtable}{@{}p{3.2cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
+\caption{问题四（对应问题三）指定日期费用核对}\label{tab:app-q4-3-settlement}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{调整偏差费} & \textbf{紧急购电费} & \textbf{总费用}\\
+\midrule
+\endfirsthead
+\caption[]{问题四（对应问题三）指定日期费用核对（续）}\\
+\toprule
+\textbf{日期} & \textbf{计划购电费} & \textbf{调整偏差费} & \textbf{紧急购电费} & \textbf{总费用}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{5}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+2025-03-20 & 45\,752.3854 & 2\,993.7647 & 2\,511.3146 & 48\,176.4042\\
+2025-06-21 & 16\,413.4331 & 1\,341.6881 & 171.6794 & 17\,926.8006\\
+2025-09-23 & 47\,203.1310 & 1\,694.3223 & 780.0594 & 47\,237.4530\\
+2025-12-21 & 73\,719.6865 & 3\,259.7364 & 738.9304 & 75\,735.0415\\
+\end{longtable}
+\endgroup
+\subsection{全年结果汇总（用于正文核对）}
+\noindent 下表不是题目指定日期表，而是各 result 文件的年度汇总指标，便于正文引用和附录核对。
+\begingroup
+\footnotesize
+\setlength{\tabcolsep}{6pt}
+\begin{longtable}{@{}p{3.2cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}>{\raggedleft\arraybackslash}p{2.1cm}@{}}
+\caption{问题二至问题四年度费用与紧急购电量}\label{tab:app-annual}\\
+\toprule
+\textbf{方案} & \textbf{计划购电费} & \textbf{调整偏差费} & \textbf{紧急购电费} & \textbf{总费用} & \textbf{紧急购电量}\\
+\midrule
+\endfirsthead
+\caption[]{问题二至问题四年度费用与紧急购电量（续）}\\
+\toprule
+\textbf{方案} & \textbf{计划购电费} & \textbf{调整偏差费} & \textbf{紧急购电费} & \textbf{总费用} & \textbf{紧急购电量}\\
+\midrule
+\endhead
+\midrule
+\multicolumn{6}{r@{}}{\footnotesize 续下页}\\
+\endfoot
+\bottomrule
+\endlastfoot
+问题二（固定电价） & 12\,905\,515.2221 & --- & 825\,521.2499 & 13\,731\,036.4719 & 159\,973.1583\\
+问题三（固定电价） & 13\,111\,843.8156 & 949\,015.7683 & 281\,151.9977 & 13\,922\,405.2474 & 61\,376.9948\\
+问题四-2（波动电价） & 13\,515\,807.0370 & --- & 1\,743\,379.3605 & 15\,259\,186.3975 & 339\,672.5066\\
+问题四-3（波动电价） & 13\,867\,834.0946 & 832\,669.2540 & 405\,847.1702 & 14\,635\,606.0187 & 92\,397.7694\\
+\end{longtable}
+\endgroup
+
+\endgroup
